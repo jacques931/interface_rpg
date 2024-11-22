@@ -29,5 +29,5 @@ RPG est un jeu immersif où vous incarnez un aventurier explorant un donjon myst
 - Modèle objet pour gérer les classes de personnages, ennemis, objets, etc.
 
 ## Contributeurs
-- Nom : [Votre nom]
+- Nom : Jacques Zhuang
 - Rôle : Développeur principal
