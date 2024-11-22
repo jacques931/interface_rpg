@@ -9,8 +9,8 @@ public class Assassin extends Player {
     public static final int ATTACK_RANGE = 50;
     public static final float SPEED = 8.0f;
 
-    public Assassin(Position position) {
-        super(position, START_HEALTH, START_MANA, PLAYER_DAMAGE, COOLDOWN, ATTACK_RANGE, SPEED);
+    public Assassin(String name,Position position) {
+        super(name ,position, START_HEALTH, START_MANA, PLAYER_DAMAGE, COOLDOWN, ATTACK_RANGE, SPEED);
     }
 
     @Override

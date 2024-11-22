@@ -40,24 +40,24 @@ public class Main extends JFrame implements CharacterSelectionListener {
     }
 
     @Override
-    public void onCharacterSelected(int characterId) {
+    public void onGameStart(int characterId, String playerName) {
         int mapSize = 80;
         Position initialPosition = new Position((float) mapSize /2*Setting.tileSize, (float) mapSize /2*Setting.tileSize - 100);
         this.startTime = System.currentTimeMillis();
         // Crée la class du joueur qu'il a choisie
         if (characterId == 1) {
-            player = new Archer(initialPosition);
+            player = new Archer(playerName, initialPosition);
         } else if (characterId == 2) {
-            player = new Assassin(initialPosition);
+            player = new Assassin(playerName, initialPosition);
         }
         else if (characterId == 3) {
-            player = new Berserker(initialPosition);
+            player = new Berserker(playerName, initialPosition);
         }
         else if (characterId == 4) {
-            player = new Mage(initialPosition);
+            player = new Mage(playerName, initialPosition);
         }
         else if (characterId == 5) {
-            player = new Paladin(initialPosition);
+            player = new Paladin(playerName, initialPosition);
         }
 
         // Initialiser le reste du jeu
@@ -110,6 +110,7 @@ public class Main extends JFrame implements CharacterSelectionListener {
         gameManager.requestFocusInWindow();
         player.setGameManager(gameManager);
     }
+
 
     public void endGame(boolean success) {
         remove(gameManager);

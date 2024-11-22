@@ -11,6 +11,7 @@ import java.awt.*;
 import java.util.Objects;
 
 public abstract class Player {
+    private String name;
     private Position position;
     private Animation animation;
     // Taile du player
@@ -37,7 +38,8 @@ public abstract class Player {
 
     private Weapon weapon;
 
-    public Player(Position position, double health, double mana, double damage,double cooldown, int attackRange, float speed) {
+    public Player(String name,Position position, double health, double mana, double damage,double cooldown, int attackRange, float speed) {
+        this.name = name;
         this.position = position;
         this.animation = new Animation(this.getImageSrc(), 150);
         this.playerWidth = Setting.playerWidth;
@@ -264,4 +266,6 @@ public abstract class Player {
     public double getXp(){
         return this.xp;
     }
+
+    public String getName() { return this.name; }
 }

@@ -9,8 +9,8 @@ public class Berserker extends Player {
     public static final int ATTACK_RANGE = 50;
     public static final float SPEED = 6.5f;
 
-    public Berserker(Position position) {
-        super(position, START_HEALTH, START_MANA, PLAYER_DAMAGE, COOLDOWN, ATTACK_RANGE, SPEED);
+    public Berserker(String name,Position position) {
+        super(name ,position, START_HEALTH, START_MANA, PLAYER_DAMAGE, COOLDOWN, ATTACK_RANGE, SPEED);
     }
 
     @Override

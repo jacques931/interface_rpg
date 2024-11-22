@@ -9,8 +9,8 @@ public class Mage extends Player {
     public static final int ATTACK_RANGE = 60;
     public static final float SPEED = 6.0f;
 
-    public Mage(Position position) {
-        super(position, START_HEALTH, START_MANA, PLAYER_DAMAGE, COOLDOWN, ATTACK_RANGE, SPEED);
+    public Mage(String name,Position position) {
+        super(name ,position, START_HEALTH, START_MANA, PLAYER_DAMAGE, COOLDOWN, ATTACK_RANGE, SPEED);
     }
 
     @Override

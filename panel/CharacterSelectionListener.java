@@ -1,5 +1,5 @@
 package rpg.panel;
 
 public interface CharacterSelectionListener {
-    void onCharacterSelected(int characterId);
+    void onGameStart(int characterId, String playerName);
 }

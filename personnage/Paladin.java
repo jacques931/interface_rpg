@@ -9,8 +9,8 @@ public class Paladin extends Player {
     public static final int ATTACK_RANGE = 50;
     public static final float SPEED = 6.5f;
 
-    public Paladin(Position position) {
-        super(position, START_HEALTH, START_MANA, PLAYER_DAMAGE, COOLDOWN, ATTACK_RANGE, SPEED);
+    public Paladin(String name,Position position) {
+        super(name ,position, START_HEALTH, START_MANA, PLAYER_DAMAGE, COOLDOWN, ATTACK_RANGE, SPEED);
     }
 
     @Override

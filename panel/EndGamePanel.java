@@ -27,6 +27,12 @@ public class EndGamePanel extends JPanel {
                 BorderFactory.createEmptyBorder(20, 20, 20, 20)
         ));
 
+        // Nom du joueur
+        JLabel nameLabel = new JLabel("Name: " + player.getName(), SwingConstants.CENTER);
+        nameLabel.setFont(new Font("Serif", Font.BOLD, 24));
+        nameLabel.setForeground(new Color(255, 165, 0));
+        statsPanel.add(nameLabel);
+
         // Classe du joueur
         JLabel classLabel = new JLabel("Class: " + player.getClass().getSimpleName(), SwingConstants.CENTER);
         classLabel.setFont(new Font("Serif", Font.BOLD, 24));

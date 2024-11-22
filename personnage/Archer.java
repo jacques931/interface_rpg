@@ -10,8 +10,8 @@ public class Archer extends Player {
     public static final int ATTACK_RANGE = 60;
     public static final float SPEED = 7.0f;
 
-    public Archer(Position position) {
-        super(position, START_HEALTH, START_MANA, PLAYER_DAMAGE, COOLDOWN, ATTACK_RANGE, SPEED);
+    public Archer(String name,Position position) {
+        super(name ,position, START_HEALTH, START_MANA, PLAYER_DAMAGE, COOLDOWN, ATTACK_RANGE, SPEED);
     }
 
     @Override
