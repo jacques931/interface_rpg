@@ -1,3 +1,7 @@
+## Installation
+### Attention :
+Lorsque vous configurez ce projet, assurez-vous de le placer correctement dans un package nommé `rpg`. Cela est essentiel pour éviter des problèmes liés aux chemins des fichiers, notamment ceux des images. Si vous utilisez IntelliJ IDEA, vérifiez que la structure du projet est bien organisée pour correspondre à cette configuration.
+
 ## Projet RPG
 Bienvenue sur le projet RPG, un jeu développé en Java dans le cadre de ma licence professionnelle en Projet Web et Mobile.
 
